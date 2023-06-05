@@ -5914,6 +5914,8 @@ textarea.form-control-lg {
     width: 10%;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    margin-left: -40px;
+    margin-right: -40px;
   }
 }
 

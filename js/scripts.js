@@ -50,7 +50,7 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
-    
+
     // Dropdown Bilder Medien
     function changeEvent() {
         var dropdown = document.getElementById("event-dropdown");
@@ -67,4 +67,7 @@ window.addEventListener('DOMContentLoaded', event => {
             stefflkirtagCarousel.style.display = "block";
         }
     }
+
+// Cookie strikt
+    document.cookie = "SameSite=Strict";
 });
