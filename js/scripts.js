@@ -75,29 +75,24 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
     // Dropdown Bilder Medien
+    document.getElementById("event-dropdown").addEventListener("change", changeEvent);
+
     function changeEvent() {
         const dropdown = document.getElementById("event-dropdown");
         const selectedEvent = dropdown.value;
-        const weinvierteltageCarousel = document.getElementById("weinvierteltage-carousel");
-        const stefflkirtagCarousel = document.getElementById("stefflkirtag-carousel");
+        const weinvierteltage = document.getElementById("weinvierteltage");
+        const stefflkirtag = document.getElementById("stefflkirtag");
 
-        // Set the initial display style for the carousels
-        weinvierteltageCarousel.style.display = "none";
-        stefflkirtagCarousel.style.display = "none";
-
-        // Function to handle the change event of the dropdown
-        function changeEvent() {
-            // Get the selected event from the dropdown
-            const selectedEvent = document.getElementById("event-dropdown").value;
-
-            // Show or hide the carousels based on the selected event
-            if (selectedEvent === "weinvierteltage") {
-                weinvierteltageCarousel.style.display = "block";
-                stefflkirtagCarousel.style.display = "none";
-            } else if (selectedEvent === "stefflkirtag") {
-                weinvierteltageCarousel.style.display = "none";
-                stefflkirtagCarousel.style.display = "block";
-            }
+        // Show or hide the carousels based on the selected event
+        if (selectedEvent === "weinvierteltage")
+        {
+            weinvierteltage.style.display = "block";
+            stefflkirtag.style.display = "none";
+        }
+        else if (selectedEvent === "stefflkirtag")
+        {
+            weinvierteltage.style.display = "none";
+            stefflkirtag.style.display = "block";
         }
     }
 

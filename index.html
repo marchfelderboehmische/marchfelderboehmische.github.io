@@ -189,200 +189,215 @@
 <section class="page-section bg-light" id="media">
     <div class="container">
         <h2 class="section-heading text-uppercase">Medien</h2>
-        <h3 class="section-subheading text-muted">Weinvierteltage 2023</h3>
-        <select id="event-dropdown" onchange="changeEvent()">
+        <select id="event-dropdown">
             <option value="weinvierteltage">Weinveriteltage 2023</option>
             <option value="stefflkirtag">Stefflkirtag 2023</option>
         </select>
-        <br><br>
-        <div id="weinvierteltage-carousel" class="carousel slide text-center" data-bs-ride="carousel"
-             data-bs-interval="5000">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src=".\assets\img\weinvierteltage2023\marchfeldertag1.JPG" class="d-block w-100" alt="Image 1">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\weinvierteltage2023\marchfeldertag2.JPG" class="d-block w-100" alt="Image 2">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\weinvierteltage2023\marchfeldertag3.JPG" class="d-block w-100" alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\weinvierteltage2023\marchfeldertag4.JPG" class="d-block w-100" alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\weinvierteltage2023\marchfeldertag5.JPG" class="d-block w-100" alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\weinvierteltage2023\marchfeldertag6.JPG" class="d-block w-100" alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\weinvierteltage2023\marchfeldertag7.JPG" class="d-block w-100" alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\weinvierteltage2023\marchfeldertag8.JPG" class="d-block w-100" alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\weinvierteltage2023\marchfeldertag9.JPG" class="d-block w-100" alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\weinvierteltage2023\marchfeldertag10.JPG" class="d-block w-100"
-                         alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\weinvierteltage2023\marchfeldertag11.JPG" class="d-block w-100"
-                         alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\weinvierteltage2023\marchfeldertag12.JPG" class="d-block w-100"
-                         alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\weinvierteltage2023\marchfeldertag13.JPG" class="d-block w-100"
-                         alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\weinvierteltage2023\marchfeldertag14.JPG" class="d-block w-100"
-                         alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\weinvierteltage2023\marchfeldertag15.JPG" class="d-block w-100"
-                         alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\weinvierteltage2023\marchfeldertag16.JPG" class="d-block w-100"
-                         alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\weinvierteltage2023\marchfeldertag17.JPG" class="d-block w-100"
-                         alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\weinvierteltage2023\marchfeldertag18.JPG" class="d-block w-100"
-                         alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\weinvierteltage2023\marchfeldertag19.JPG" class="d-block w-100"
-                         alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\weinvierteltage2023\marchfeldertag20.JPG" class="d-block w-100"
-                         alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\weinvierteltage2023\marchfeldertag21.JPG" class="d-block w-100"
-                         alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\weinvierteltage2023\marchfeldertag22.JPG" class="d-block w-100"
-                         alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\weinvierteltage2023\marchfeldertag23.JPG" class="d-block w-100"
-                         alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\weinvierteltage2023\marchfeldertag24.JPG" class="d-block w-100"
-                         alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\weinvierteltage2023\marchfeldertag25.JPG" class="d-block w-100"
-                         alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\weinvierteltage2023\marchfeldertag26.JPG" class="d-block w-100"
-                         alt="Image 3">
+        <div id="weinvierteltage">
+            <h3 class="section-subheading text-muted">Weinvierteltage 2023</h3>
+            <br><br>
+            <div id="weinvierteltage-carousel" class="carousel slide text-center" data-bs-ride="carousel"
+                 data-bs-interval="5000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <figure>
+                            <img src=".\assets\img\weinvierteltage2023\marchfeldertag1.JPG" class="d-block w-100" alt="Image 1">
+                            <figcaption>Das ist die Bildunterschrift</figcaption>
+                        </figure>
+                    </div>
+                    <div class="carousel-item">
+                        <figure>
+                            <img src=".\assets\img\weinvierteltage2023\marchfeldertag2.JPG" class="d-block w-100" alt="Image 2">
+                            <figcaption>Das ist die Bildunterschrift</figcaption>
+                        </figure>
+                    </div>
+                    <div class="carousel-item">
+                        <figure>
+                            <img src=".\assets\img\weinvierteltage2023\marchfeldertag3.JPG" class="d-block w-100" alt="Image 3">
+                            <figcaption>Das ist die Bildunterschrift</figcaption>
+                        </figure>
+                    </div>
+                    <div class="carousel-item">
+                        <figure>
+                            <img src=".\assets\img\weinvierteltage2023\marchfeldertag4.JPG" class="d-block w-100" alt="Image 3">
+                            <figcaption>Das ist die Bildunterschrift</figcaption>
+                        </figure>
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\weinvierteltage2023\marchfeldertag5.JPG" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\weinvierteltage2023\marchfeldertag6.JPG" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\weinvierteltage2023\marchfeldertag7.JPG" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\weinvierteltage2023\marchfeldertag8.JPG" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\weinvierteltage2023\marchfeldertag9.JPG" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\weinvierteltage2023\marchfeldertag10.JPG" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\weinvierteltage2023\marchfeldertag11.JPG" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\weinvierteltage2023\marchfeldertag12.JPG" class="d-block w-100"
+                             alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\weinvierteltage2023\marchfeldertag13.JPG" class="d-block w-100"
+                             alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\weinvierteltage2023\marchfeldertag14.JPG" class="d-block w-100"
+                             alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\weinvierteltage2023\marchfeldertag15.JPG" class="d-block w-100"
+                             alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\weinvierteltage2023\marchfeldertag16.JPG" class="d-block w-100"
+                             alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\weinvierteltage2023\marchfeldertag17.JPG" class="d-block w-100"
+                             alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\weinvierteltage2023\marchfeldertag18.JPG" class="d-block w-100"
+                             alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\weinvierteltage2023\marchfeldertag19.JPG" class="d-block w-100"
+                             alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\weinvierteltage2023\marchfeldertag20.JPG" class="d-block w-100"
+                             alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\weinvierteltage2023\marchfeldertag21.JPG" class="d-block w-100"
+                             alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\weinvierteltage2023\marchfeldertag22.JPG" class="d-block w-100"
+                             alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\weinvierteltage2023\marchfeldertag23.JPG" class="d-block w-100"
+                             alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\weinvierteltage2023\marchfeldertag24.JPG" class="d-block w-100"
+                             alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\weinvierteltage2023\marchfeldertag25.JPG" class="d-block w-100"
+                             alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\weinvierteltage2023\marchfeldertag26.JPG" class="d-block w-100"
+                             alt="Image 3">
+                    </div>
                 </div>
             </div>
+            <
         </div>
         <br>
-        <h3 class="section-subheading text-muted">Stefflkirtag 2023</h3>
-        <div id="stefflkirtag-carousel" class="carousel slide text-center" data-bs-ride="carousel"
-             data-bs-interval="5000">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src=".\assets\img\stefflkirtag2023\stefflkirtag1.JPG" class="d-block w-100" alt="Image 1">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\stefflkirtag2023\stefflkirtag2.JPG" class="d-block w-100" alt="Image 2">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\stefflkirtag2023\stefflkirtag3.JPG" class="d-block w-100" alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\stefflkirtag2023\stefflkirtag4.JPG" class="d-block w-100" alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\stefflkirtag2023\stefflkirtag5.JPG" class="d-block w-100" alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\stefflkirtag2023\stefflkirtag6.JPG" class="d-block w-100" alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\stefflkirtag2023\stefflkirtag7.JPG" class="d-block w-100" alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\stefflkirtag2023\stefflkirtag8.JPG" class="d-block w-100" alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\stefflkirtag2023\stefflkirtag9.JPG" class="d-block w-100" alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\stefflkirtag2023\stefflkirtag10.JPG" class="d-block w-100" alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\stefflkirtag2023\stefflkirtag11.JPG" class="d-block w-100" alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\stefflkirtag2023\stefflkirtag12.JPG" class="d-block w-100" alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\stefflkirtag2023\stefflkirtag13.JPG" class="d-block w-100" alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\stefflkirtag2023\stefflkirtag14.JPG" class="d-block w-100" alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\stefflkirtag2023\stefflkirtag15.JPG" class="d-block w-100" alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\stefflkirtag2023\stefflkirtag16.JPG" class="d-block w-100" alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\stefflkirtag2023\stefflkirtag17.JPG" class="d-block w-100" alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\stefflkirtag2023\stefflkirtag18.JPG" class="d-block w-100" alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\stefflkirtag2023\stefflkirtag19.JPG" class="d-block w-100" alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\stefflkirtag2023\stefflkirtag20.JPG" class="d-block w-100" alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\stefflkirtag2023\stefflkirtag21.JPG" class="d-block w-100" alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\stefflkirtag2023\stefflkirtag22.JPG" class="d-block w-100" alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\stefflkirtag2023\stefflkirtag23.JPG" class="d-block w-100" alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\stefflkirtag2023\stefflkirtag24.JPG" class="d-block w-100" alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\stefflkirtag2023\stefflkirtag25.JPG" class="d-block w-100" alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\stefflkirtag2023\stefflkirtag26.JPG" class="d-block w-100" alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\stefflkirtag2023\stefflkirtag27.JPG" class="d-block w-100" alt="Image 3">
-                </div>
-                <div class="carousel-item">
-                    <img src=".\assets\img\stefflkirtag2023\stefflkirtag28.JPG" class="d-block w-100" alt="Image 3">
+        <div id="stefflkirtag" style="display: none;">
+            <h3 class="section-subheading text-muted">Stefflkirtag 2023</h3>
+            <div id="stefflkirtag-carousel" class="carousel slide text-center" data-bs-ride="carousel"
+                 data-bs-interval="5000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src=".\assets\img\stefflkirtag2023\stefflkirtag1.JPG" class="d-block w-100" alt="Image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\stefflkirtag2023\stefflkirtag2.JPG" class="d-block w-100" alt="Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\stefflkirtag2023\stefflkirtag3.JPG" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\stefflkirtag2023\stefflkirtag4.JPG" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\stefflkirtag2023\stefflkirtag5.JPG" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\stefflkirtag2023\stefflkirtag6.JPG" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\stefflkirtag2023\stefflkirtag7.JPG" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\stefflkirtag2023\stefflkirtag8.JPG" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\stefflkirtag2023\stefflkirtag9.JPG" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\stefflkirtag2023\stefflkirtag10.JPG" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\stefflkirtag2023\stefflkirtag11.JPG" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\stefflkirtag2023\stefflkirtag12.JPG" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\stefflkirtag2023\stefflkirtag13.JPG" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\stefflkirtag2023\stefflkirtag14.JPG" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\stefflkirtag2023\stefflkirtag15.JPG" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\stefflkirtag2023\stefflkirtag16.JPG" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\stefflkirtag2023\stefflkirtag17.JPG" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\stefflkirtag2023\stefflkirtag18.JPG" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\stefflkirtag2023\stefflkirtag19.JPG" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\stefflkirtag2023\stefflkirtag20.JPG" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\stefflkirtag2023\stefflkirtag21.JPG" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\stefflkirtag2023\stefflkirtag22.JPG" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\stefflkirtag2023\stefflkirtag23.JPG" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\stefflkirtag2023\stefflkirtag24.JPG" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\stefflkirtag2023\stefflkirtag25.JPG" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\stefflkirtag2023\stefflkirtag26.JPG" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\stefflkirtag2023\stefflkirtag27.JPG" class="d-block w-100" alt="Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src=".\assets\img\stefflkirtag2023\stefflkirtag28.JPG" class="d-block w-100" alt="Image 3">
+                    </div>
                 </div>
             </div>
         </div>
