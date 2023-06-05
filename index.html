@@ -317,10 +317,10 @@
                     <img src=".\assets\img\stefflkirtag2023\stefflkirtag3.JPG" class="d-block w-100" alt="Image 3">
                 </div>
                 <div class="carousel-item">
-                    <img src=".\assets\img\stefflkirtag2023\stefflkirtag4.JPG" class="d-block w-100" alt="Image 3">
+                    <img src=".\assets\img\stefflkirtag2023\stefflkirtag4.JPG" class="d-block w-100" alt="Image 4">
                 </div>
                 <div class="carousel-item">
-                    <img src=".\assets\img\stefflkirtag2023\stefflkirtag5.JPG" class="d-block w-100" alt="Image 3">
+                    <img src=".\assets\img\stefflkirtag2023\stefflkirtag5.JPG" class="d-block w-100" alt="Image 5">
                 </div>
                 <div class="carousel-item">
                     <img src=".\assets\img\stefflkirtag2023\stefflkirtag6.JPG" class="d-block w-100" alt="Image 3">
@@ -634,50 +634,6 @@
     });
 </script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js"></script>
-<script>
-    $(document).ready(function () {
-        // Initialisierung des Datumsauswahl-Plugins
-        $('#veranstaltungsdatum').datepicker({
-            format: 'dd.mm.yyyy',
-            autoclose: true
-        });
-
-        // Initialisierung des Timepicker-Plugins
-        $('#startzeit, #endzeit').timepicker({
-            timeFormat: 'HH:mm',
-            interval: 15,
-            minTime: '00:00',
-            maxTime: '23:45',
-            startTime: '00:00',
-            dynamic: false,
-            dropdown: true,
-            scrollbar: true
-        });
-
-        // Funktion zum Anpassen der Uhrzeit-Ausgabe
-        function formatTimepickerTime(time) {
-            var hours = time.getHours();
-            var minutes = time.getMinutes();
-
-            // Führende Nullen hinzufügen
-            if (hours < 10) {
-                hours = "0" + hours;
-            }
-
-            if (minutes < 10) {
-                minutes = "0" + minutes;
-            }
-
-            return hours + ":" + minutes;
-        }
-
-        // Ereignis, wenn eine Zeit ausgewählt wird
-        $('#startzeit, #endzeit').on('changeTime', function () {
-            var formattedTime = formatTimepickerTime($(this).timepicker('getTime'));
-            $(this).val(formattedTime);
-        });
-    });
-</script>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         window.addEventListener("scroll", function () {
