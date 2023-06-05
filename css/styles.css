@@ -11141,7 +11141,7 @@ p {
   padding: 1rem 0;
 }
 .page-section h2.section-heading, .page-section .section-heading.h2 {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -11563,7 +11563,7 @@ section#contact {
   background-position: center;
 }
 section#contact .section-heading {
-  color: #fff;
+  color: #000000;
 }
 section#contact form#contactForm .form-group {
   margin-bottom: 1.5rem;
@@ -11687,7 +11687,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .py-5 .img-fluid {
-  max-width: 100%;
+  max-width: 70%;
   height: auto;
 }
 
@@ -11730,4 +11730,93 @@ section#contact form#contactForm :-ms-input-placeholder {
   .blocksatz {
     text-align: center; /* Blocksatz beibehalten */
   }
+}
+
+.license-dialog {
+  text-align: center;
+  max-width: 400px; /* Adjust as needed */
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.license-dialog-title {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.license-dialog-text {
+  font-size: 16px;
+}
+
+.license-dialog-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.license-dialog-button:hover {
+  background-color: #0056b3;
+}
+
+/* CSS for all screen sizes */
+
+/* Styles for smartphones */
+@media only screen and (max-width: 767px) {
+  /* CSS specific to smartphones */
+  #licenseButton {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+}
+
+/* Styles for tablets */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* CSS specific to tablets */
+  #licenseButton {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+}
+
+/* Styles for PCs */
+@media only screen and (min-width: 992px) {
+  /* CSS specific to PCs */
+  #licenseButton {
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+}
+
+.cookie-popup {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f8f8f8;
+  padding: 10px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cookie-popup-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cookie-btn {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
 }

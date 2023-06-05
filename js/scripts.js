@@ -19,9 +19,9 @@
   * Copyright 2011-2022 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */
- /*!
-  * jQuery v3.5.1 -ajax,-ajax/jsonp,-ajax/load,-ajax/script,-ajax/var/location,-ajax/var/nonce,-ajax/var/rquery,-ajax/xhr,-manipulation/_evalUrl,-deprecated/ajax-event-alias,-effects,-effects/Tween,-effects/animatedSelector | (c) JS Foundation and other contributors | jquery.org/license
- */
+/*!
+ * jQuery v3.5.1 -ajax,-ajax/jsonp,-ajax/load,-ajax/script,-ajax/var/location,-ajax/var/nonce,-ajax/var/rquery,-ajax/xhr,-manipulation/_evalUrl,-deprecated/ajax-event-alias,-effects,-effects/Tween,-effects/animatedSelector | (c) JS Foundation and other contributors | jquery.org/license
+*/
 /**
  * @popperjs/core v2.5.4 - MIT License
  */
@@ -58,7 +58,8 @@ window.addEventListener('DOMContentLoaded', event => {
             target: '#mainNav',
             rootMargin: '0px 0px -40%',
         });
-    };
+    }
+    ;
 
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
@@ -75,21 +76,63 @@ window.addEventListener('DOMContentLoaded', event => {
 
     // Dropdown Bilder Medien
     function changeEvent() {
-        var dropdown = document.getElementById("event-dropdown");
-        var selectedEvent = dropdown.value;
-        
-        var weinvierteltageCarousel = document.getElementById("weinvierteltage-carousel");
-        var stefflkirtagCarousel = document.getElementById("stefflkirtag-carousel");
-        
-        if (selectedEvent === "weinvierteltage") {
-            weinvierteltageCarousel.style.display = "block";
-            stefflkirtagCarousel.style.display = "none";
-        } else if (selectedEvent === "stefflkirtag") {
-            weinvierteltageCarousel.style.display = "none";
-            stefflkirtagCarousel.style.display = "block";
+        const dropdown = document.getElementById("event-dropdown");
+        const selectedEvent = dropdown.value;
+        const weinvierteltageCarousel = document.getElementById("weinvierteltage-carousel");
+        const stefflkirtagCarousel = document.getElementById("stefflkirtag-carousel");
+
+        // Set the initial display style for the carousels
+        weinvierteltageCarousel.style.display = "none";
+        stefflkirtagCarousel.style.display = "none";
+
+        // Function to handle the change event of the dropdown
+        function changeEvent() {
+            // Get the selected event from the dropdown
+            const selectedEvent = document.getElementById("event-dropdown").value;
+
+            // Show or hide the carousels based on the selected event
+            if (selectedEvent === "weinvierteltage") {
+                weinvierteltageCarousel.style.display = "block";
+                stefflkirtagCarousel.style.display = "none";
+            } else if (selectedEvent === "stefflkirtag") {
+                weinvierteltageCarousel.style.display = "none";
+                stefflkirtagCarousel.style.display = "block";
+            }
         }
     }
 
-// Cookie strikt
+    // Cookie strikt
     document.cookie = "SameSite=Strict";
+
+    // Check if the user has accepted the cookies
+    function checkCookiesAccepted() {
+        return localStorage.getItem('cookiesAccepted') === 'true';
+    }
+
+    // Hide the cookie popup
+    function hideCookiePopup() {
+        var cookiePopup = document.getElementById('cookiePopup');
+        cookiePopup.style.display = 'none';
+    }
+
+    // Show the cookie popup
+    function showCookiePopup() {
+        var cookiePopup = document.getElementById('cookiePopup');
+        cookiePopup.style.display = 'block';
+    }
+
+    // Set the cookies as accepted
+    function acceptCookies() {
+        localStorage.setItem('cookiesAccepted', 'true');
+        hideCookiePopup();
+    }
+
+    // Check if cookies have already been accepted
+    if (!checkCookiesAccepted()) {
+        showCookiePopup();
+    }
+
+    // Attach event listener to the Accept button
+    var acceptBtn = document.getElementById('acceptCookiesBtn');
+    acceptBtn.addEventListener('click', acceptCookies);
 });
