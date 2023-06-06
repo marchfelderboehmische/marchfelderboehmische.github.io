@@ -97,7 +97,7 @@
         </p>
         <h2 class="section-subheading text-muted text-center">Besetzung</h2>
         <br>
-        <div id="musician-carousel" class="carousel slide text-center" data-bs-ride="carousel">
+        <div id="musician-carousel" class="carousel slide text-center">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="row">
@@ -198,9 +198,8 @@
         <div id="weinvierteltage">
             <h3 class="section-subheading text-muted"></h3>
             <br><br>
-            <div id="weinvierteltage-carousel" class="carousel slide text-center" data-bs-ride="carousel"
-                 data-bs-interval="5000000000">
-                <div class="carousel-inner">
+            <div id="weinvierteltage-carousel" class="carousel slide text-center">
+            <div class="carousel-inner">
                     <div class="carousel-item active">
                         <figure>
                             <img src=".\assets\img\weinvierteltage2023\marchfeldertag1.JPG" class="d-block w-100"
@@ -384,13 +383,25 @@
                         </figure>
                     </div>
                 </div>
+                <!-- Vorheriger Button -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#weinvierteltage-carousel"
+                        data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Vorheriges</span>
+                </button>
+
+                <!-- Nächster Button -->
+                <button class="carousel-control-next" type="button" data-bs-target="#weinvierteltage-carousel"
+                        data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Nächstes</span>
+                </button>
             </div>
         </div>
         <br>
         <div id="stefflkirtag" style="display: none;">
             <h3 class="section-subheading text-muted"></h3>
-            <div id="stefflkirtag-carousel" class="carousel slide text-center" data-bs-ride="carousel"
-                 data-bs-interval="50000000">
+            <div id="stefflkirtag-carousel" class="carousel slide text-center">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <figure>
@@ -561,6 +572,19 @@
                         </figure>
                     </div>
                 </div>
+                <!-- Vorheriger Button -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#stefflkirtag-carousel"
+                        data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Vorheriges</span>
+                </button>
+
+                <!-- Nächster Button -->
+                <button class="carousel-control-next" type="button" data-bs-target="#stefflkirtag-carousel"
+                        data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Nächstes</span>
+                </button>
             </div>
         </div>
     </div>

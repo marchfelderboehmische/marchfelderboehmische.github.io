@@ -29,8 +29,6 @@
 // Scripts
 // 
 
-window.addEventListener('DOMContentLoaded', event => {
-
     // Navbar shrink function
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
@@ -59,7 +57,7 @@ window.addEventListener('DOMContentLoaded', event => {
             rootMargin: '0px 0px -40%',
         });
     }
-    ;
+
 
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
@@ -130,4 +128,3 @@ window.addEventListener('DOMContentLoaded', event => {
     // Attach event listener to the Accept button
     var acceptBtn = document.getElementById('acceptCookiesBtn');
     acceptBtn.addEventListener('click', acceptCookies);
-});

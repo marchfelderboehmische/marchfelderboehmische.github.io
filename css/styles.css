@@ -5846,20 +5846,26 @@ textarea.form-control-lg {
 }
 
 .carousel-inner img {
-  max-width: 35%;
-  height: 50%;
+  max-width: 55%;
+  height: 55%;
   margin: auto;
 }
 
 @media (max-width: 768px) {
   .carousel-inner img {
-    max-height: 400px; /* Adjust the height for smaller screens */
+    max-height: 500px; /* Adjust the height for smaller screens */
   }
 }
 
 @media (max-width: 576px) {
   .carousel-inner img {
-    max-height: 300px; /* Adjust the height for even smaller screens */
+    max-height: 350px; /* Adjust the height for even smaller screens */
+  }
+}
+
+@media (min-width: 769px) {
+  .carousel-inner img {
+    max-height: 900px; /* Adjust the height for even smaller screens */
   }
 }
 
@@ -11144,7 +11150,7 @@ p {
   padding: 1rem 0;
 }
 .page-section h2.section-heading, .page-section .section-heading.h2 {
-  font-size: 1.7rem;
+  font-size: 2.5rem;
   margin-top: 20px;
   margin-bottom: 1rem;
 }
@@ -11711,27 +11717,27 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 /* Standard-Blocksatz-Stil */
 .blocksatz {
-  text-align: center;
+  text-align: justify;
 }
 
 /* Blocksatz für Smartphones */
 @media (max-width: 767px) {
   .blocksatz {
-    text-align: left; /* Linksbündig statt Blocksatz */
+    text-align: justify; /* Linksbündig statt Blocksatz */
   }
 }
 
 /* Blocksatz für Tablets */
 @media (min-width: 768px) and (max-width: 991px) {
   .blocksatz {
-    text-align: center; /* Zentriert statt Blocksatz */
+    text-align: justify; /* Zentriert statt Blocksatz */
   }
 }
 
 /* Blocksatz für Desktops und größere Bildschirme */
 @media (min-width: 992px) {
   .blocksatz {
-    text-align: center; /* Blocksatz beibehalten */
+    text-align: justify; /* Blocksatz beibehalten */
   }
 }
 
