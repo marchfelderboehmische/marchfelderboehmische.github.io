@@ -5846,26 +5846,29 @@ textarea.form-control-lg {
 }
 
 .carousel-inner img {
-  max-width: 55%;
-  height: 55%;
+  width: 20%;
+  height: 40%;
   margin: auto;
 }
 
 @media (max-width: 768px) {
   .carousel-inner img {
-    max-height: 500px; /* Adjust the height for smaller screens */
+    max-height: 50%; /* Adjust the height for smaller screens */
+    max-width: 70%; /* Adjust the height for smaller screens */
   }
 }
 
 @media (max-width: 576px) {
   .carousel-inner img {
-    max-height: 350px; /* Adjust the height for even smaller screens */
+    max-height: 50%; /* Adjust the height for even smaller screens */
+    max-width: 70%; /* Adjust the height for smaller screens */
   }
 }
 
 @media (min-width: 769px) {
   .carousel-inner img {
-    max-height: 900px; /* Adjust the height for even smaller screens */
+    max-height: 30%; /* Adjust the height for even smaller screens */
+    max-width: 40%; /* Adjust the height for smaller screens */
   }
 }
 
