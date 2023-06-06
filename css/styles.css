@@ -161,11 +161,11 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: calc(1.3rem + 0.6vw);
+  font-size: calc(1.1rem + 0.6vw);
 }
 @media (min-width: 1200px) {
   h3, .h3 {
-    font-size: 1.75rem;
+    font-size: 1.55rem !important;
   }
 }
 
@@ -11822,4 +11822,14 @@ section#contact form#contactForm :-ms-input-placeholder {
   padding: 8px 16px;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.index-page {
+}
+
+/* Ausblenden auf Desktop-PCs */
+@media (min-width: 992px) {
+  .index-page {
+    display: none;
+  }
 }
