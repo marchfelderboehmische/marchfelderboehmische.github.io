@@ -7046,6 +7046,9 @@ Show All Properties (16 more)
 
 .link-dark {
   color: #212529 !important;
+  border: none;
+  background-color: #ffffff;
+  font: "Montserrat";
 }
 .link-dark:hover, .link-dark:focus {
   color: #1a1e21 !important;

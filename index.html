@@ -188,16 +188,18 @@
 <!-- media Grid-->
 <section class="page-section bg-light" id="media">
     <div class="container">
-        <h2 class="section-heading text-uppercase">Medien</h2>
+        <h2 class="section-heading text-uppercase text-center">Medien</h2>
+        <div class="text-center">
         <select id="event-dropdown">
-            <option value="weinvierteltage">Weinveriteltage 2023</option>
+            <option value="weinvierteltage">Weinvierteltage 2023</option>
             <option value="stefflkirtag">Stefflkirtag 2023</option>
         </select>
+        </div>
         <div id="weinvierteltage">
-            <h3 class="section-subheading text-muted">Weinvierteltage 2023</h3>
+            <h3 class="section-subheading text-muted"></h3>
             <br><br>
             <div id="weinvierteltage-carousel" class="carousel slide text-center" data-bs-ride="carousel"
-                 data-bs-interval="5000">
+                 data-bs-interval="5000000000">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <figure>
@@ -306,7 +308,6 @@
                     </div>
                 </div>
             </div>
-            <
         </div>
         <br>
         <div id="stefflkirtag" style="display: none;">
@@ -587,7 +588,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-4 text-lg-start">Copyright &copy; Marchfelder Böhmische 2023</div>
-            <div class="col-lg-4 my-3 my-lg-0">
+            <div class="col-lg-4 my-3 my-lg-0 text-center">
                 <a class="btn btn-dark btn-social mx-2" href="https://www.youtube.com/@marchfelderboehmische"
                    aria-label="YouTube" style="border-color: transparent;" target="_blank"><i
                         class="fab fa-youtube"></i></a>
@@ -596,11 +597,11 @@
                 <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/marchfelderboehmische/"
                    aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
-            <div class="col-lg-4 text-lg-end">
+            <div class="col-lg-4 text-lg-end text-center">
                 <a class="link-dark text-decoration-none me-3" href="datenschutz.html">Datenschutz</a>
-                <a class="link-dark text-decoration-none" href="impressum.html">Impressum</a>
+                <a class="link-dark text-decoration-none me-3" href="impressum.html">Impressum</a>
                 <!-- License PopUp-->
-                <button onclick="openLicenseDialog()">Lizenz</button>
+                <button class="link-dark text-decoration-none me-3" onclick="openLicenseDialog()">Lizenz</button>
 
                 <dialog id="licenseDialog" style="text-align: center;">
                     <h2>Lizenz</h2>
