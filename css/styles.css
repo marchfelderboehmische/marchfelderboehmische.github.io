@@ -8394,7 +8394,7 @@ Show All Properties (16 more)
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: 6c75#7d !important;
+  color: #000000 !important;
 }
 
 .text-black-50 {
