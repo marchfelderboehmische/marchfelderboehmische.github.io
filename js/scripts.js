@@ -33,8 +33,6 @@
 document.cookie = "SameSite=Strict";
 
 function handleCookies() {
-    console.log("function entered");
-
     const banner = document.getElementById('cookie-banner');
     const acceptBtn = document.getElementById('accept-cookies');
 
