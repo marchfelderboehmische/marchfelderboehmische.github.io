@@ -11824,6 +11824,29 @@ section#contact form#contactForm :-ms-input-placeholder {
   margin: 0 auto;
 }
 
+
+/* Media Query für Smartphones */
+@media only screen and (max-width: 767px) {
+  .cookie-popup-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 260px;
+    text-align: center;
+  }
+}
+
+/* Media Query für Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .cookie-popup-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    text-align: center;
+  }
+}
+
 .cookie-btn {
   background-color: #dc3545;
   color: #fff;
@@ -11831,6 +11854,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   padding: 8px 16px;
   border-radius: 4px;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 .index-page {
