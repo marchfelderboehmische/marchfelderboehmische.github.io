@@ -1,0 +1,24 @@
+<header class="masthead bg-light border-bottom">
+    <div class="container">
+        <div class="masthead-heading d-none d-lg-block">Die Marchfelder Böhmische</div>
+        <div class="masthead-subheading text-uppercase" style="margin-bottom: -90px;"></div>
+        <div class="container">
+        </div>
+    </div>
+</header>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        window.addEventListener("scroll", function () {
+            const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+            const firstSectionHeight = document.querySelector(".masthead-subheading").offsetTop;
+
+            const navbar = document.getElementById("mainNav");
+
+            if (scrollPosition >= firstSectionHeight) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+    });
+</script>
