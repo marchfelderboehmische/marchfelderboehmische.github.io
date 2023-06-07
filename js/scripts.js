@@ -97,34 +97,35 @@
     // Cookie strikt
     document.cookie = "SameSite=Strict";
 
-    // Check if the user has accepted the cookies
-    function checkCookiesAccepted() {
-        return localStorage.getItem('cookiesAccepted') === 'true';
-    }
+    window.onload = function() {
 
-    // Hide the cookie popup
-    function hideCookiePopup() {
-        var cookiePopup = document.getElementById('cookiePopup');
-        cookiePopup.style.display = 'none';
-    }
-
-    // Show the cookie popup
-    function showCookiePopup() {
-        var cookiePopup = document.getElementById('cookiePopup');
-        cookiePopup.style.display = 'block';
-    }
-
-    // Set the cookies as accepted
-    function acceptCookies() {
-        localStorage.setItem('cookiesAccepted', 'true');
-        hideCookiePopup();
-    }
-
-    // Check if cookies have already been accepted
-    if (!checkCookiesAccepted()) {
-        showCookiePopup();
-    }
-
-    // Attach event listener to the Accept button
-    var acceptBtn = document.getElementById('acceptCookiesBtn');
-    acceptBtn.addEventListener('click', acceptCookies);
+        var acceptBtn = document.getElementById('accept-cookies');
+      
+        var banner = document.getElementById('cookie-banner');
+      
+      
+        // Überprüfen, ob der Wert im localStorage gesetzt ist
+      
+        if (localStorage.getItem('cookies-accepted')) {
+      
+          banner.style.display = 'none'; // Wenn ja, verstecken wir den Banner
+      
+        }
+      
+      
+        // Wenn der Benutzer auf "Akzeptieren" klickt
+      
+        acceptBtn.onclick = function(){
+      
+          // Setzen des localStorage Wertes
+      
+          localStorage.setItem('cookies-accepted', 'true');
+      
+      
+          // Verstecken des Banners
+      
+          banner.style.display = 'none';
+      
+        };
+      
+      };
