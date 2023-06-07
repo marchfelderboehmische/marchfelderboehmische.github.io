@@ -1,0 +1,63 @@
+<!-- Footer-->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-start">Copyright &copy; Marchfelder Böhmische 2023</div>
+            <div class="col-lg-4 my-3 my-lg-0 text-center">
+                <a aria-label="YouTube" class="btn btn-dark btn-social mx-2"
+                   href="https://www.youtube.com/@marchfelderboehmische" style="border-color: transparent;"
+                   target="_blank"><i
+                        class="fab fa-youtube"></i></a>
+                <a aria-label="Facebook" class="btn btn-dark btn-social mx-2"
+                   href="https://www.facebook.com/MarchfelderBoehmische" target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a aria-label="Instagram" class="btn btn-dark btn-social mx-2"
+                   href="https://www.instagram.com/marchfelderboehmische/" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+            <div class="col-lg-4 text-lg-end text-center">
+                <a class="link-dark text-decoration-none me-3" href="datenschutz.html">Datenschutz</a>
+                <a class="link-dark text-decoration-none me-3" href="impressum.html">Impressum</a>
+                <a class="link-dark text-decoration-none me-3" href="haftung.html">Haftungsausschluss</a>
+                <!-- License PopUp-->
+                <button class="link-dark text-decoration-none me-3" onclick="openLicenseDialog()">Lizenz</button>
+            </div>
+            <div>
+                <dialog id="licenseDialog" style="text-align: center;">
+                    <h2>Lizenz</h2>
+                    <p>The MIT License (MIT)<br>
+                        Copyright (c) 2013-2023 Start Bootstrap LLC<br>
+                        Permission is hereby granted, free of charge, to any person obtaining a copy
+                        of this software and associated documentation files (the "Software"), to deal
+                        in the Software without restriction, including without limitation the rights
+                        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+                        copies of the Software, and to permit persons to whom the Software is
+                        furnished to do so, subject to the following conditions:<br>
+                        <br>
+                        The above copyright notice and this permission notice shall be included in
+                        all copies or substantial portions of the Software.<br>
+                        <br>
+                        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+                        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+                        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+                        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+                        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+                        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+                        THE SOFTWARE.</p>
+                    <button onclick="closeLicenseDialog()">Schließen</button>
+                </dialog>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    function openLicenseDialog() {
+        const dialog = document.getElementById('licenseDialog');
+        dialog.showModal();
+    }
+
+    function closeLicenseDialog() {
+        const dialog = document.getElementById('licenseDialog');
+        dialog.close();
+    }
+</script>
