@@ -2,6 +2,7 @@
 layout: default
 title: Haftung
 ---
+<script src="js/scripts.js"></script>
 
 {% include navigation.html ref="index.html" %}
 
@@ -57,10 +58,4 @@ title: Haftung
 
 {% include footer.html %}
 
-<!-- Cookies-->
-<div class="cookie-popup" id="cookie-banner">
-    <div class="cookie-popup-content">
-        <span>Diese Website verwendet Cookies, um Ihnen die bestmögliche Nutzung unserer Website zu ermöglichen.</span>
-        <button class="cookie-btn" id="accept-cookies">Akzeptieren</button>
-    </div>
-</div>
+{% include cookie.html %}

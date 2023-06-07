@@ -2,6 +2,7 @@
 layout: default
 title: Datenschutz
 ---
+<script src="js/scripts.js"></script>
 
 {% include navigation.html ref="index.html" %}
 
@@ -22,7 +23,7 @@ title: Datenschutz
                 Daten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen sechs Monate bei uns
                 gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
             <h2 class="section-subheading text-muted">Cookies</h2>
-            <p>Unsere Website verwendet so genannte Cookies. Dabei handelt es sich um kleine Textdateien, die mit Hilfe
+            <p>Unsere Website verwendet sogenannte Cookies. Dabei handelt es sich um kleine Textdateien, die mithilfe
                 des Browsers auf Ihrem Endgerät abgelegt werden. Sie richten keinen Schaden an.
                 Wir nutzen Cookies dazu, unser Angebot nutzerfreundlich zu gestalten. Einige Cookies bleiben auf Ihrem
                 Endgerät gespeichert, bis Sie diese löschen. Sie ermöglichen es uns, Ihren Browser beim nächsten
@@ -46,10 +47,4 @@ title: Datenschutz
 
 {% include footer.html %}
 
-<!-- Cookies-->
-<div class="cookie-popup" id="cookie-banner">
-    <div class="cookie-popup-content">
-        <span>Diese Website verwendet Cookies, um Ihnen die bestmögliche Nutzung unserer Website zu ermöglichen.</span>
-        <button class="cookie-btn" id="accept-cookies">Akzeptieren</button>
-    </div>
-</div>
+{% include cookie.html %}

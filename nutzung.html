@@ -2,6 +2,7 @@
 layout: default
 title: Nutzung
 ---
+<script src="js/scripts.js"></script>
 
 {% include navigation.html ref="index.html" %}
 
@@ -12,7 +13,7 @@ title: Nutzung
     <div class="container">
         <div class="text-center">
             <h2 class="section-heading text-uppercase">Nutzungsbedingungen:</h2>
-            <p>Die Marchfelder Böhmische gestattet Ihnen das Benutzen dieser Website nur zu privatem, nichtkommerziellem
+            <p>Die Marchfelder Böhmische gestattet Ihnen das Benutzen dieser Website nur zu privatem, nicht kommerziellem
                 Gebrauch. Der Inhalt dieser Website ist urheberrechtlich geschützt. Die Bearbeitung des Inhalts der
                 Website erfolgt durch Dennis TOTH oder Thomas STOCKHAMMER. Berichte, Beiträge, Bilder mit namentlicher
                 Nennung stammen vom jeweiligen Autor.
@@ -21,7 +22,7 @@ title: Nutzung
                 <br>
             <ul>
                 <li>Das Einsehen und Herunterladen von Beiträgen, Bildern etc. darf nur für privaten und
-                    nichtkommerziellen Gebrauch erfolgen.
+                    nicht kommerziellen Gebrauch erfolgen.
                 </li>
                 <li>In jeder Kopie eines heruntergeladenen Inhalts ist auf alle Urheber- und sonstige Eigentumsrechte
                     des ursprünglichen Inhalts zu verweisen.
@@ -39,7 +40,7 @@ title: Nutzung
             Beim Verstoß gegen diese Bedingungen erlischt automatisch Ihre Berechtigung zur Nutzung dieser Website. In
             diesem Fall sind Sie verpflichtet, alle heruntergeladenen beziehungsweise gedruckten Inhalte unverzüglich
             zu vernichten.
-            </p>
+            <p></p>
             <div class="container">
             </div>
         </div>
@@ -48,10 +49,4 @@ title: Nutzung
 
 {% include footer.html %}
 
-<!-- Cookies-->
-<div class="cookie-popup" id="cookie-banner">
-    <div class="cookie-popup-content">
-        <span>Diese Website verwendet Cookies, um Ihnen die bestmögliche Nutzung unserer Website zu ermöglichen.</span>
-        <button class="cookie-btn" id="accept-cookies">Akzeptieren</button>
-    </div>
-</div>
+{% include cookie.html %}

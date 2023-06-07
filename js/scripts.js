@@ -27,105 +27,89 @@
  */
 //
 // Scripts
-// 
+//
 
-    // Navbar shrink function
-    var navbarShrink = function () {
-        const navbarCollapsible = document.body.querySelector('#mainNav');
-        if (!navbarCollapsible) {
-            return;
-        }
-        if (window.scrollY === 0) {
-            navbarCollapsible.classList.remove('navbar-shrink')
-        } else {
-            navbarCollapsible.classList.add('navbar-shrink')
-        }
+// Cookie strikt
+document.cookie = "SameSite=Strict";
 
+function handleCookies() {
+    console.log("function entered");
+
+    const banner = document.getElementById('cookie-banner');
+    const acceptBtn = document.getElementById('accept-cookies');
+
+    // Überprüfen, ob der Wert im localStorage gesetzt ist
+    if (localStorage.getItem('cookies-accepted') === 'true') {
+        banner.style.display = 'none'; // Wenn ja, verstecken wir das Banner
+    }
+    // Wenn der Benutzer auf "Akzeptieren" klickt
+    acceptBtn.onclick = function () {
+        // Setzen des localStorage Wertes
+        localStorage.setItem('cookies-accepted', 'true');
+        // Verstecken des Banners
+        banner.style.display = 'none';
     };
+}
 
-    // Shrink the navbar 
-    navbarShrink();
+document.addEventListener('DOMContentLoaded', handleCookies)
 
-    // Shrink the navbar when page is scrolled
-    document.addEventListener('scroll', navbarShrink);
-
-    //  Activate Bootstrap scrollspy on the main nav element
-    const mainNav = document.body.querySelector('#mainNav');
-    if (mainNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#mainNav',
-            rootMargin: '0px 0px -40%',
-        });
+// Navbar shrink function
+const navbarShrink = function () {
+    const navbarCollapsible = document.body.querySelector('#mainNav');
+    if (!navbarCollapsible) {
+        return;
+    }
+    if (window.scrollY === 0) {
+        navbarCollapsible.classList.remove('navbar-shrink')
+    } else {
+        navbarCollapsible.classList.add('navbar-shrink')
     }
 
+};
 
-    // Collapse responsive navbar when toggler is visible
-    const navbarToggler = document.body.querySelector('.navbar-toggler');
-    const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
-    );
-    responsiveNavItems.map(function (responsiveNavItem) {
-        responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();
-            }
-        });
+// Shrink the navbar
+navbarShrink();
+
+// Shrink the navbar when page is scrolled
+document.addEventListener('scroll', navbarShrink);
+
+//  Activate Bootstrap scrollspy on the main nav element
+const mainNav = document.body.querySelector('#mainNav');
+if (mainNav) {
+    new bootstrap.ScrollSpy(document.body, {
+        target: '#mainNav',
+        rootMargin: '0px 0px -40%',
     });
+}
 
-    // Dropdown Bilder Medien
-    document.getElementById("event-dropdown").addEventListener("change", changeEvent);
-
-    function changeEvent() {
-        const dropdown = document.getElementById("event-dropdown");
-        const selectedEvent = dropdown.value;
-        const weinvierteltage = document.getElementById("weinvierteltage");
-        const stefflkirtag = document.getElementById("stefflkirtag");
-
-        // Show or hide the carousels based on the selected event
-        if (selectedEvent === "weinvierteltage")
-        {
-            weinvierteltage.style.display = "block";
-            stefflkirtag.style.display = "none";
+// Collapse responsive navbar when toggler is visible
+const navbarToggler = document.body.querySelector('.navbar-toggler');
+const responsiveNavItems = [].slice.call(
+    document.querySelectorAll('#navbarResponsive .nav-link')
+);
+responsiveNavItems.map(function (responsiveNavItem) {
+    responsiveNavItem.addEventListener('click', () => {
+        if (window.getComputedStyle(navbarToggler).display !== 'none') {
+            navbarToggler.click();
         }
-        else if (selectedEvent === "stefflkirtag")
-        {
-            weinvierteltage.style.display = "none";
-            stefflkirtag.style.display = "block";
-        }
+    });
+});
+
+// Dropdown Bilder Medien
+document.getElementById("event-dropdown").addEventListener("change", changeEvent);
+
+function changeEvent() {
+    const dropdown = document.getElementById("event-dropdown");
+    const selectedEvent = dropdown.value;
+    const weinvierteltage = document.getElementById("weinvierteltage");
+    const stefflkirtag = document.getElementById("stefflkirtag");
+
+    // Show or hide the carousels based on the selected event
+    if (selectedEvent === "weinvierteltage") {
+        weinvierteltage.style.display = "block";
+        stefflkirtag.style.display = "none";
+    } else if (selectedEvent === "stefflkirtag") {
+        weinvierteltage.style.display = "none";
+        stefflkirtag.style.display = "block";
     }
-
-    // Cookie strikt
-    document.cookie = "SameSite=Strict";
-
-    window.onload = function() {
-
-        var acceptBtn = document.getElementById('accept-cookies');
-      
-        var banner = document.getElementById('cookie-banner');
-      
-      
-        // Überprüfen, ob der Wert im localStorage gesetzt ist
-      
-        if (localStorage.getItem('cookies-accepted')) {
-      
-          banner.style.display = 'none'; // Wenn ja, verstecken wir den Banner
-      
-        }
-      
-      
-        // Wenn der Benutzer auf "Akzeptieren" klickt
-      
-        acceptBtn.onclick = function(){
-      
-          // Setzen des localStorage Wertes
-      
-          localStorage.setItem('cookies-accepted', 'true');
-      
-      
-          // Verstecken des Banners
-      
-          banner.style.display = 'none';
-      
-        };
-      
-      };
+}
