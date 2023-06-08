@@ -131,188 +131,25 @@ title: Home
             <br><br>
             <div class="carousel slide text-center" id="weinvierteltage-carousel">
                 <div class="carousel-inner">
+                    <!-- Weinvierteltage 2023 Preview Bild -->
                     <div class="carousel-item active">
                         <figure>
-                            <img alt="Image 1" class="d-block w-100"
-                                 src=".\assets\img\weinvierteltage2023\marchfeldertag1.JPG">
+                            <img alt="Foto Weinvierteltage 2023" class="d-block w-100"
+                                 src="./assets/img/weinvierteltage2023/marchfeldertag24.JPG">
                             <figcaption>© Heinz Assinger</figcaption>
                         </figure>
                     </div>
+                    {% for image in site.static_files %}
+                    {% if image.path contains 'weinvierteltage2023/marchfeldertag' and image.extname == '.JPG' %}
                     <div class="carousel-item">
                         <figure>
-                            <img alt="Image 2" class="d-block w-100"
-                                 src=".\assets\img\weinvierteltage2023\marchfeldertag2.JPG">
+                            <img alt="Foto Weinvierteltage 2023" class="d-block w-100"
+                                 src="{{ image.path }}">
                             <figcaption>© Heinz Assinger</figcaption>
                         </figure>
                     </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 3" class="d-block w-100"
-                                 src=".\assets\img\weinvierteltage2023\marchfeldertag3.JPG">
-                            <figcaption>© Heinz Assinger</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 4" class="d-block w-100"
-                                 src=".\assets\img\weinvierteltage2023\marchfeldertag4.JPG">
-                            <figcaption>© Heinz Assinger</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 5" class="d-block w-100"
-                                 src=".\assets\img\weinvierteltage2023\marchfeldertag5.JPG">
-                            <figcaption>© Heinz Assinger</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 6" class="d-block w-100"
-                                 src=".\assets\img\weinvierteltage2023\marchfeldertag6.JPG">
-                            <figcaption>© Heinz Assinger</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 7" class="d-block w-100"
-                                 src=".\assets\img\weinvierteltage2023\marchfeldertag7.JPG">
-                            <figcaption>© Heinz Assinger</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 8" class="d-block w-100"
-                                 src=".\assets\img\weinvierteltage2023\marchfeldertag8.JPG">
-                            <figcaption>© Heinz Assinger</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 9" class="d-block w-100"
-                                 src=".\assets\img\weinvierteltage2023\marchfeldertag9.JPG">
-                            <figcaption>© Heinz Assinger</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 10" class="d-block w-100"
-                                 src=".\assets\img\weinvierteltage2023\marchfeldertag10.JPG">
-                            <figcaption>© Heinz Assinger</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 11" class="d-block w-100"
-                                 src=".\assets\img\weinvierteltage2023\marchfeldertag11.JPG">
-                            <figcaption>© Heinz Assinger</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 12" class="d-block w-100"
-                                 src=".\assets\img\weinvierteltage2023\marchfeldertag12.JPG">
-                            <figcaption>© Heinz Assinger</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 13" class="d-block w-100"
-                                 src=".\assets\img\weinvierteltage2023\marchfeldertag13.JPG">
-                            <figcaption>© Heinz Assinger</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 14" class="d-block w-100"
-                                 src=".\assets\img\weinvierteltage2023\marchfeldertag14.JPG">
-                            <figcaption>© Heinz Assinger</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 15" class="d-block w-100"
-                                 src=".\assets\img\weinvierteltage2023\marchfeldertag15.JPG">
-                            <figcaption>© Heinz Assinger</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 16" class="d-block w-100"
-                                 src=".\assets\img\weinvierteltage2023\marchfeldertag16.JPG">
-                            <figcaption>© Heinz Assinger</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 17" class="d-block w-100"
-                                 src=".\assets\img\weinvierteltage2023\marchfeldertag17.JPG">
-                            <figcaption>© Heinz Assinger</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 18" class="d-block w-100"
-                                 src=".\assets\img\weinvierteltage2023\marchfeldertag18.JPG">
-                            <figcaption>© Heinz Assinger</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 19" class="d-block w-100"
-                                 src=".\assets\img\weinvierteltage2023\marchfeldertag19.JPG">
-                            <figcaption>© Heinz Assinger</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 20" class="d-block w-100"
-                                 src=".\assets\img\weinvierteltage2023\marchfeldertag20.JPG">
-                            <figcaption>© Heinz Assinger</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 21" class="d-block w-100"
-                                 src=".\assets\img\weinvierteltage2023\marchfeldertag21.JPG">
-                            <figcaption>© Heinz Assinger</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 22" class="d-block w-100"
-                                 src=".\assets\img\weinvierteltage2023\marchfeldertag22.JPG">
-                            <figcaption>© Heinz Assinger</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 23" class="d-block w-100"
-                                 src=".\assets\img\weinvierteltage2023\marchfeldertag23.JPG">
-                            <figcaption>© Heinz Assinger</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 24" class="d-block w-100"
-                                 src=".\assets\img\weinvierteltage2023\marchfeldertag24.JPG">
-                            <figcaption>© Heinz Assinger</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 25" class="d-block w-100"
-                                 src=".\assets\img\weinvierteltage2023\marchfeldertag25.JPG">
-                            <figcaption>© Heinz Assinger</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 26" class="d-block w-100"
-                                 src=".\assets\img\weinvierteltage2023\marchfeldertag26.JPG">
-                            <figcaption>© Heinz Assinger</figcaption>
-                        </figure>
-                    </div>
+                    {% endif %}
+                    {% endfor %}
                 </div>
                 <!-- Vorheriger Button -->
                 <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#weinvierteltage-carousel"
@@ -334,202 +171,25 @@ title: Home
             <h3 class="section-subheading text-muted"></h3>
             <div class="carousel slide text-center" id="stefflkirtag-carousel">
                 <div class="carousel-inner">
+                    <!-- Stefflkirtag 2023 Preview Bild -->
                     <div class="carousel-item active">
                         <figure>
-                            <img alt="Image 1" class="d-block w-100"
-                                 src=".\assets\img\stefflkirtag2023\stefflkirtag1.JPG">
+                            <img alt="Foto Stefflkirtag 2023" class="d-block w-100"
+                                 src="./assets/img/stefflkirtag2023/stefflkirtag27.JPG">
                             <figcaption>© Stephanie Pillwax</figcaption>
                         </figure>
                     </div>
+                    {% for image in site.static_files %}
+                    {% if image.path contains 'stefflkirtag2023/stefflkirtag' and image.extname == '.JPG' %}
                     <div class="carousel-item">
                         <figure>
-                            <img alt="Image 2" class="d-block w-100"
-                                 src=".\assets\img\stefflkirtag2023\stefflkirtag2.JPG">
+                            <img alt="Foto Stefflkirtag 2023" class="d-block w-100"
+                                 src="{{ image.path }}">
                             <figcaption>© Stephanie Pillwax</figcaption>
                         </figure>
                     </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 3" class="d-block w-100"
-                                 src=".\assets\img\stefflkirtag2023\stefflkirtag3.JPG">
-                            <figcaption>© Stephanie Pillwax</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 4" class="d-block w-100"
-                                 src=".\assets\img\stefflkirtag2023\stefflkirtag4.JPG">
-                            <figcaption>© Stephanie Pillwax</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 5" class="d-block w-100"
-                                 src=".\assets\img\stefflkirtag2023\stefflkirtag5.JPG">
-                            <figcaption>© Stephanie Pillwax</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 6" class="d-block w-100"
-                                 src=".\assets\img\stefflkirtag2023\stefflkirtag6.JPG">
-                            <figcaption>© Stephanie Pillwax</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 7" class="d-block w-100"
-                                 src=".\assets\img\stefflkirtag2023\stefflkirtag7.JPG">
-                            <figcaption>© Stephanie Pillwax</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 8" class="d-block w-100"
-                                 src=".\assets\img\stefflkirtag2023\stefflkirtag8.JPG">
-                            <figcaption>© Stephanie Pillwax</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 9" class="d-block w-100"
-                                 src=".\assets\img\stefflkirtag2023\stefflkirtag9.JPG">
-                            <figcaption>© Stephanie Pillwax</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 10" class="d-block w-100"
-                                 src=".\assets\img\stefflkirtag2023\stefflkirtag10.JPG">
-                            <figcaption>© Stephanie Pillwax</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 11" class="d-block w-100"
-                                 src=".\assets\img\stefflkirtag2023\stefflkirtag11.JPG">
-                            <figcaption>© Stephanie Pillwax</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 12" class="d-block w-100"
-                                 src=".\assets\img\stefflkirtag2023\stefflkirtag12.JPG">
-                            <figcaption>© Stephanie Pillwax</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 13" class="d-block w-100"
-                                 src=".\assets\img\stefflkirtag2023\stefflkirtag13.JPG">
-                            <figcaption>© Stephanie Pillwax</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 14" class="d-block w-100"
-                                 src=".\assets\img\stefflkirtag2023\stefflkirtag14.JPG">
-                            <figcaption>© Stephanie Pillwax</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 15" class="d-block w-100"
-                                 src=".\assets\img\stefflkirtag2023\stefflkirtag15.JPG">
-                            <figcaption>© Stephanie Pillwax</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 16" class="d-block w-100"
-                                 src=".\assets\img\stefflkirtag2023\stefflkirtag16.JPG">
-                            <figcaption>© Stephanie Pillwax</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 17" class="d-block w-100"
-                                 src=".\assets\img\stefflkirtag2023\stefflkirtag17.JPG">
-                            <figcaption>© Stephanie Pillwax</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 18" class="d-block w-100"
-                                 src=".\assets\img\stefflkirtag2023\stefflkirtag18.JPG">
-                            <figcaption>© Stephanie Pillwax</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 19" class="d-block w-100"
-                                 src=".\assets\img\stefflkirtag2023\stefflkirtag19.JPG">
-                            <figcaption>© Stephanie Pillwax</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 20" class="d-block w-100"
-                                 src=".\assets\img\stefflkirtag2023\stefflkirtag20.JPG">
-                            <figcaption>© Stephanie Pillwax</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 21" class="d-block w-100"
-                                 src=".\assets\img\stefflkirtag2023\stefflkirtag21.JPG">
-                            <figcaption>© Stephanie Pillwax</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 22" class="d-block w-100"
-                                 src=".\assets\img\stefflkirtag2023\stefflkirtag22.JPG">
-                            <figcaption>© Stephanie Pillwax</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 23" class="d-block w-100"
-                                 src=".\assets\img\stefflkirtag2023\stefflkirtag23.JPG">
-                            <figcaption>© Stephanie Pillwax</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 24" class="d-block w-100"
-                                 src=".\assets\img\stefflkirtag2023\stefflkirtag24.JPG">
-                            <figcaption>© Stephanie Pillwax</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 25" class="d-block w-100"
-                                 src=".\assets\img\stefflkirtag2023\stefflkirtag25.JPG">
-                            <figcaption>© Stephanie Pillwax</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 26" class="d-block w-100"
-                                 src=".\assets\img\stefflkirtag2023\stefflkirtag26.JPG">
-                            <figcaption>© Stephanie Pillwax</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 27" class="d-block w-100"
-                                 src=".\assets\img\stefflkirtag2023\stefflkirtag27.JPG">
-                            <figcaption>© Stephanie Pillwax</figcaption>
-                        </figure>
-                    </div>
-                    <div class="carousel-item">
-                        <figure>
-                            <img alt="Image 28" class="d-block w-100"
-                                 src=".\assets\img\stefflkirtag2023\stefflkirtag28.JPG">
-                            <figcaption>© Stephanie Pillwax</figcaption>
-                        </figure>
-                    </div>
+                    {% endif %}
+                    {% endfor %}
                 </div>
                 <!-- Vorheriger Button -->
                 <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#stefflkirtag-carousel"
