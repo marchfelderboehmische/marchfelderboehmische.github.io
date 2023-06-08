@@ -22,34 +22,9 @@
 /*!
  * jQuery v3.5.1 -ajax,-ajax/jsonp,-ajax/load,-ajax/script,-ajax/var/location,-ajax/var/nonce,-ajax/var/rquery,-ajax/xhr,-manipulation/_evalUrl,-deprecated/ajax-event-alias,-effects,-effects/Tween,-effects/animatedSelector | (c) JS Foundation and other contributors | jquery.org/license
 */
-/**
+/*
  * @popperjs/core v2.5.4 - MIT License
  */
-//
-// Scripts
-//
-
-// Cookie strikt
-document.cookie = "SameSite=Strict";
-
-function handleCookies() {
-    const banner = document.getElementById('cookie-banner');
-    const acceptBtn = document.getElementById('accept-cookies');
-
-    // Überprüfen, ob der Wert im localStorage gesetzt ist
-    if (localStorage.getItem('cookies-accepted') === 'true') {
-        banner.style.display = 'none'; // Wenn ja, verstecken wir das Banner
-    }
-    // Wenn der Benutzer auf "Akzeptieren" klickt
-    acceptBtn.onclick = function () {
-        // Setzen des localStorage Wertes
-        localStorage.setItem('cookies-accepted', 'true');
-        // Verstecken des Banners
-        banner.style.display = 'none';
-    };
-}
-
-document.addEventListener('DOMContentLoaded', handleCookies)
 
 // Navbar shrink function
 const navbarShrink = function () {
@@ -93,21 +68,3 @@ responsiveNavItems.map(function (responsiveNavItem) {
     });
 });
 
-// Dropdown Bilder Medien
-document.getElementById("event-dropdown").addEventListener("change", changeEvent);
-
-function changeEvent() {
-    const dropdown = document.getElementById("event-dropdown");
-    const selectedEvent = dropdown.value;
-    const weinvierteltage = document.getElementById("weinvierteltage");
-    const stefflkirtag = document.getElementById("stefflkirtag");
-
-    // Show or hide the carousels based on the selected event
-    if (selectedEvent === "weinvierteltage") {
-        weinvierteltage.style.display = "block";
-        stefflkirtag.style.display = "none";
-    } else if (selectedEvent === "stefflkirtag") {
-        weinvierteltage.style.display = "none";
-        stefflkirtag.style.display = "block";
-    }
-}
