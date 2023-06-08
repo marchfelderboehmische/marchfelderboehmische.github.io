@@ -25,38 +25,34 @@
 /*
  * @popperjs/core v2.5.4 - MIT License
  */
+let navbarCollapsible;
 
-// Navbar shrink function
-const navbarShrink = function () {
-    const navbarCollapsible = document.body.querySelector('#mainNav');
-    if (!navbarCollapsible) {
-        return;
-    }
-    if (window.scrollY === 0) {
-        navbarCollapsible.classList.remove('navbar-shrink')
-    } else {
-        navbarCollapsible.classList.add('navbar-shrink')
-    }
-
-};
-
-// Shrink the navbar
-navbarShrink();
-
-// Shrink the navbar when page is scrolled
-document.addEventListener('scroll', navbarShrink);
-
-//  Activate Bootstrap scrollspy on the main nav element
-const mainNav = document.body.querySelector('#mainNav');
-if (mainNav) {
+function initializeAndAddScrollSpy() {
+    navbarCollapsible = document.querySelector('#mainNav');
     new bootstrap.ScrollSpy(document.body, {
         target: '#mainNav',
         rootMargin: '0px 0px -40%',
     });
 }
 
+// add scrollSpy when the content is loaded
+document.addEventListener('DOMContentLoaded', initializeAndAddScrollSpy);
+
+
+// Navbar shrink function
+function navbarShrink() {
+    if (window.scrollY === 0) {
+        navbarCollapsible.classList.remove('navbar-shrink')
+    } else if (navbarCollapsible != null && navbarCollapsible.classList != null && !navbarCollapsible.classList.contains('navbar-shrink')) {
+        navbarCollapsible.classList.add('navbar-shrink')
+    }
+}
+
+// Shrink the navbar when page is scrolled
+document.addEventListener('scroll', navbarShrink);
+
 // Collapse responsive navbar when toggler is visible
-const navbarToggler = document.body.querySelector('.navbar-toggler');
+const navbarToggler = document.querySelector('.navbar-toggler');
 const responsiveNavItems = [].slice.call(
     document.querySelectorAll('#navbarResponsive .nav-link')
 );
