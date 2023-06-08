@@ -11728,6 +11728,10 @@ section#contact form#contactForm :-ms-input-placeholder {
   .blocksatz {
     text-align: justify; /* Linksbündig statt Blocksatz */
   }
+  .page-section h2 {
+    font-size: 21px !important; /* Adjust the font size as needed */
+    margin-bottom: 10px; /* Add some bottom margin to create spacing */
+  }
 }
 
 /* Blocksatz für Tablets */
